@@ -183,6 +183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5569502577105933208, guid: 104ee5e76bc2eee4598d64f0001ccfa7,
+        type: 3}
+      propertyPath: m_Name
+      value: RightHand
+      objectReference: {fileID: 0}
     - target: {fileID: 7959384224925681092, guid: 104ee5e76bc2eee4598d64f0001ccfa7,
         type: 3}
       propertyPath: m_Name
@@ -192,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178102578960808486, guid: 104ee5e76bc2eee4598d64f0001ccfa7,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -514,7 +524,7 @@ GameObject:
   - component: {fileID: 92254160}
   - component: {fileID: 92254162}
   m_Layer: 0
-  m_Name: Position
+  m_Name: 'Screw Driver '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +539,7 @@ Transform:
   m_GameObject: {fileID: 92254157}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0026062, y: 0.8353, z: 3.9739559}
+  m_LocalPosition: {x: 1.0026062, y: 0.91, z: 3.766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -750,6 +760,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbcf37f6cf9a9542998426609280f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerLeft:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Trigger Left
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2edc9e5c-7b62-426a-b9a3-4d24cff130c8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  triggerRight:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Trigger Right
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: bda74310-3c67-4670-ad32-c51672403e95
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  triggerValueL: 0
+  triggerValueR: 0
+  handGrabbed: 0
 --- !u!1 &161434999
 GameObject:
   m_ObjectHideFlags: 0
