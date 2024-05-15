@@ -9,6 +9,10 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/VRCharacter.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 8d88db840f738004eaa3b82b50f24739,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 94332e29b5043ec4ebc5ea90639ff32c,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 77ca0e19a50c46d4b951d1c9d7f52891,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 67702fc493a8dde4d9f14b9fe4431119,

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MenuTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8676419d248234d40a442e6fc4fe960c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 7832219648
+    m_Localized: 'Mech Master: VR Motor Lab'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99272241152
+    m_Localized: "Mech Master: VR Motor Lab is an immersive virtual reality learning
+      experience designed to empower users with a comprehensive understanding of
+      electric motors. Through a series of interactive modules, users can:\r\n\r\n
+      *Become a Master Inspector:**  Meticulously examine individual motor components
+      in a 3D environment, zooming in on intricate details and identifying key functions.
+      \r\n *Build Like a Pro:** Assemble a virtual motor step-by-step, experiencing
+      the satisfaction of putting the different parts together in the correct sequence
+      and understanding their interdependencies.\r\n *Deconstruct with Confidence:** 
+      Disassemble the virtual motor, learning the proper techniques for taking it
+      apart, gaining valuable insights into its internal workings."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 576818917376
+    m_Localized: Tap To Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4020434776064
+    m_Localized: Please enter you name to continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4509457068032
+    m_Localized: 'Enter Name :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4463281975296
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4497507495936
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

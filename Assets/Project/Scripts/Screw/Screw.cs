@@ -18,16 +18,18 @@ public class Screw : MonoBehaviour
         if(other.gameObject.tag == "ScrewHolder"){
             Destroy(xRGrabInteractable);
             rb.isKinematic = true;
-            transform.position = other.transform.position;
-            transform.eulerAngles = other.transform.eulerAngles;
+            transform.position = other.transform.parent.position;
+            transform.eulerAngles = other.transform.parent.eulerAngles;
             transform.GetChild(0).GetComponent<Collider>().isTrigger = true;
             Destroy(other.gameObject);
             
             screwSnapPosition = transform.position;
-            Vector3 screwPos = screwSnapPosition;
-            screwPos.z += screwInsert;
+            Vector3 temp = screwSnapPosition;
+            temp.z += screwInsert;
+            screwTightPosition = temp;
         }
     }
 
-    private Vector3 screwSnapPosition, screwTightPosition;
+    private Vector3 screwSnapPosition;
+    [HideInInspector] public Vector3 screwTightPosition;
 }
