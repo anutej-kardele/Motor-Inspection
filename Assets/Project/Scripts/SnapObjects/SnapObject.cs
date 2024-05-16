@@ -2,19 +2,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+//[RequireComponent(typeof(XRGrabInteractable), typeof(BoxCollider))]
 public class SnapObject : MonoBehaviour
 {
     [SerializeField] public List<SnapObject> snapTargets;
     [SerializeField] private SnapObject snapParent;
     [SerializeField] private GameObject snapPosition;
+    [SerializeField, Header("If you dont want the parent of these object to be snapParent")] private Transform overrideSnapParent;
 
     private XRGrabInteractable xRGrabInteractable;
     private Rigidbody rb;
+
+    [SerializeField, Header("Skip Snapping Condition Once all SnapTarget are met directly send Snap to parent ")] private bool skipSnapping = false;
+    [SerializeField, Header("Cant grab the object if value is TRUE")] private bool restrictGrabble = false;
 
     private void Start(){
         xRGrabInteractable = GetComponent<XRGrabInteractable>();
         rb = GetComponent<Rigidbody>();
         CheckGrabbleStatus();
+        if(restrictGrabble) xRGrabInteractable.enabled = false;
 
         if(snapParent){
             xRGrabInteractable.selectEntered.AddListener(ToggleSnapPositionTrue);
@@ -22,8 +28,17 @@ public class SnapObject : MonoBehaviour
         }
     }
 
-    private void CheckGrabbleStatus(){                                                              // Enable XRGrabInteractable when required 
-        xRGrabInteractable.enabled = snapTargets.Count == 0 ? true : false;
+    private void CheckGrabbleStatus(){                                                         // Enable XRGrabInteractable when required 
+        if(skipSnapping && snapTargets.Count == 0){
+            snapParent.ReduceSnapTarget(this.name);
+
+            if(overrideSnapParent != null) transform.parent = overrideSnapParent;
+            else if(snapParent != null) transform.parent = snapParent.transform;
+
+            return;
+        } 
+        
+        if(!restrictGrabble) xRGrabInteractable.enabled = snapTargets.Count == 0 ? true : false;
     }
 
     private void ToggleSnapPositionTrue(SelectEnterEventArgs arg0) {  snapPosition.SetActive(true); }
@@ -38,7 +53,11 @@ public class SnapObject : MonoBehaviour
             Destroy(snapPosition);
             Destroy(GetComponent<Rigidbody>());
             snapParent.ReduceSnapTarget(this.name);
-            transform.parent = snapParent.transform;
+            
+            if(overrideSnapParent != null) transform.parent = overrideSnapParent; 
+            else transform.parent = snapParent.transform;
+
+            Destroy(GetComponent<Collider>());
             Destroy(this);
         }
     }
