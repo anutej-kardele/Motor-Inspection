@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e244f334883d9954ba9e886e77fe73b8, type: 3}
+  m_Name: Disassemble
+  m_EditorClassIdentifier: 
+  currentOperation: 2
+  imageDisplay: {fileID: 21300000, guid: 7a9a47dbbb035ba4bacc756fa983f25c, type: 3}
+  taskImage: {fileID: 21300000, guid: 822cc3eb515753746b9a9a76dfe1cc15, type: 3}
+  titleLanguage:
+  - Disassemble
+  - "\u091C\u0941\u0926\u093E"
+  discriptionLanguage:
+  - Disassemble the virtual motor, learning the proper techniques for taking it apart,
+    gaining valuable insights into its internal workings.
+  - "\u0935\u0930\u094D\u091A\u0941\u0905\u0932 \u092E\u094B\u091F\u0930 \u0915\u094B
+    \u0905\u0932\u0917 \u0915\u0930\u0947\u0902, \u0907\u0938\u0947 \u0905\u0932\u0917
+    \u0915\u0930\u0928\u0947 \u0915\u0940 \u0909\u091A\u093F\u0924 \u0924\u0915\u0928\u0940\u0915
+    \u0938\u0940\u0916\u0947\u0902, \u0907\u0938\u0915\u0947 \u0906\u0902\u0924\u0930\u093F\u0915
+    \u0915\u093E\u092E\u0915\u093E\u091C \u092E\u0947\u0902 \u092E\u0942\u0932\u094D\u092F\u0935\u093E\u0928
+    \u0905\u0902\u0924\u0930\u094D\u0926\u0943\u0937\u094D\u091F\u093F \u092A\u094D\u0930\u093E\u092A\u094D\u0924
+    \u0915\u0930\u0947\u0902\u0964"

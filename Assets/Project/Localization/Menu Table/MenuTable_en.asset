@@ -55,6 +55,46 @@ MonoBehaviour:
     m_Localized: Back
     m_Metadata:
       m_Items: []
+  - m_Id: 374131209416704
+    m_Localized: Motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374410227101696
+    m_Localized: Part Familarization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374566662057984
+    m_Localized: Operation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375169333211136
+    m_Localized: Begin VR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375443544223744
+    m_Localized: Assembly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375486493896704
+    m_Localized: Disassemble
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376151215583232
+    m_Localized: Machine Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376180403744768
+    m_Localized: Training Type
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376182349901824
+    m_Localized: Process Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382188106690560
+    m_Localized: Non Selected
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

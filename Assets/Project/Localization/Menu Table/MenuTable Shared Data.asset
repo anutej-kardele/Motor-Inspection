@@ -43,6 +43,46 @@ MonoBehaviour:
     m_Key: enterName
     m_Metadata:
       m_Items: []
+  - m_Id: 374131209416704
+    m_Key: motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374410227101696
+    m_Key: partFamilarization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374566662057984
+    m_Key: operation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375169333211136
+    m_Key: beginVR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375443544223744
+    m_Key: assembly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375486493896704
+    m_Key: disassemble
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376151215583232
+    m_Key: machineSelection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376180403744768
+    m_Key: trainingType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376182349901824
+    m_Key: processSelection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382188106690560
+    m_Key: nonSelected
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

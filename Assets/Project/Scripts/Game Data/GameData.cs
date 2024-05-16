@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameData : MonoBehaviour
 {
     public static GameData instance;
+    public Operation operation;
     public string userName = "";
     public static bool repeatedInstance = false;
     public DateTime dateTime;
