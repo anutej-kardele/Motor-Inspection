@@ -50,11 +50,11 @@ public class AssignMenuBarData : MonoBehaviour
 
     public void AssignMenuBarIndication(int index){
         // un-highlighting previous state
-        menuBarHighlightImage[previosSelectedIndex].color = new Color(0.937255f, 0.9411765f, 0.937255f, 1);
+        menuBarHighlightImage[previosSelectedIndex].color = new Color(0.9372549f, 0.9411765f, 0.9372549f, 1);
         menuBarHighlightText[previosSelectedIndex].color =  Color.black;
 
         // highlighting current state
-        menuBarHighlightImage[index].color = new Color(0.8980393f, 0, 0, 1);
+        menuBarHighlightImage[index].color = new Color(0.1674083f, 0.3887022f, 0.6226415f, 1);
         menuBarHighlightText[index].color =  Color.white;
         
         previosSelectedIndex = index;
@@ -62,11 +62,13 @@ public class AssignMenuBarData : MonoBehaviour
 
     public void ResetData(){
         for(int i = 0; i < menuBarText.Length; i++){
-            menuBarHighlightImage[i].color = new Color(0.937255f, 0.9411765f, 0.937255f, 1);
+            menuBarHighlightImage[i].color = new Color(0.9372549f, 0.9411765f, 0.9372549f, 1);
             menuBarHighlightText[i].color =  Color.black;
         }
-        menuBarHighlightImage[0].color = new Color(0.8980393f, 0, 0, 1);
+        menuBarHighlightImage[0].color = new Color(0.1674083f, 0.3887022f, 0.6226415f, 1);
         menuBarHighlightText[0].color =  Color.white;
+
+        // new Color(0.8980393f, 0, 0, 1);
     }
 
     public string[,] machineText = new string[2,2]{

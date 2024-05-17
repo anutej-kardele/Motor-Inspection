@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MotorPFName Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MotorPFName
+  m_TableCollectionNameGuidString: a8c5bebc76b84104f8fddc08b81d5735
+  m_Entries:
+  - m_Id: 4782960640
+    m_Key: note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108466155520
+    m_Key: Default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31503079059456
+    m_Key: Yoke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31851831242752
+    m_Key: TernimalBox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31898731950080
+    m_Key: PoleCorePoleShoe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31948698693632
+    m_Key: Commutator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31973294092288
+    m_Key: ArmatureCore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32008694018048
+    m_Key: ArmatureWinding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32037819265024
+    m_Key: EndPlate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32069326876672
+    m_Key: Bearings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32073856724992
+    m_Key: Pulley
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32091338584064
+    m_Key: VentilationDuct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32126168084480
+    m_Key: CoolingPad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32150864146432
+    m_Key: BackEndPlate
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2343749061962104835
+  references:
+    version: 2
+    RefIds:
+    - rid: 2343749061962104835
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1715921587876

@@ -17,5 +17,4 @@ MonoBehaviour:
   currentState: 0
   machineStateValue: 0
   processStageValue: 0
-  phaseValue: 0
   operationStateValue: 0

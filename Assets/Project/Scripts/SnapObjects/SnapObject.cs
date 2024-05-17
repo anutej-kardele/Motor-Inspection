@@ -16,6 +16,8 @@ public class SnapObject : MonoBehaviour
     [SerializeField, Header("Skip Snapping Condition Once all SnapTarget are met directly send Snap to parent ")] private bool skipSnapping = false;
     [SerializeField, Header("Cant grab the object if value is TRUE")] private bool restrictGrabble = false;
 
+    [SerializeField] private int instructionIndexToSend = 0;
+
     private void Start(){
         xRGrabInteractable = GetComponent<XRGrabInteractable>();
         rb = GetComponent<Rigidbody>();
@@ -35,6 +37,8 @@ public class SnapObject : MonoBehaviour
             if(overrideSnapParent != null) transform.parent = overrideSnapParent;
             else if(snapParent != null) transform.parent = snapParent.transform;
 
+            AssemblyInstructions.instance.SetInstructions(instructionIndexToSend);
+            
             return;
         } 
         
@@ -58,6 +62,8 @@ public class SnapObject : MonoBehaviour
             else transform.parent = snapParent.transform;
 
             Destroy(GetComponent<Collider>());
+
+            AssemblyInstructions.instance.SetInstructions(instructionIndexToSend);
             Destroy(this);
         }
     }

@@ -23,6 +23,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a92df2784e0583840a4cc8293e48cc81
+    m_Address: MotorPFName_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b9a9658cf10e7b4faab667237620d65
+    m_Address: MotorPFPart_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39f912a97346e4247aa940f37d0a5f52
+    m_Address: NavigationBarTable_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: dc9e78d695868aa44b06b007032f97b0, type: 2}
   m_SchemaSet:

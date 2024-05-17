@@ -27,7 +27,6 @@ public class MenuScript : MonoBehaviour
         }
 
         MenuUIElement.instance.backgroundImage.sprite = MenuUIElement.instance.backgroundSprite;
-        MenuUIElement.instance.backgroundImage.color = new Color(43, 99, 159, 255);
 
         MenuUIElement.instance.nameDisplayText.SetActive(true);
         MenuUIElement.instance.nameDisplayIcon.SetActive(true);
