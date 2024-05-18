@@ -14,8 +14,6 @@ public class InspectionManagerMotor : MonoBehaviour
     public Texture selection;
     public GameObject prefab;
     public Transform prefabParent;
-
-    public GameObject raycastObject;
     public GameObject endCanvas;
     public Button menuButton;
 
@@ -73,7 +71,6 @@ public class InspectionManagerMotor : MonoBehaviour
     private void CallEnd(){ EventManager.taskFinished?.Invoke(); }
     
     private void EndModule() { 
-        raycastObject.SetActive(false);
         endCanvas.SetActive(true);
     }
 

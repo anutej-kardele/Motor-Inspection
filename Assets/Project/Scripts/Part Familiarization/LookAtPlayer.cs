@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class LookAtAxies : MonoBehaviour
+public class LookAtPlayer : MonoBehaviour
 {
-    public Transform target;
-    [SerializeField] private bool status = true;
-    [SerializeField] private XRGrabInteractable xRGrabInteractable;
+    private Transform target;
+    private bool status = true;
+    private XRGrabInteractable xRGrabInteractable;
 
     void Start(){
         xRGrabInteractable = GetComponent<XRGrabInteractable>();
+        target = GameObject.FindGameObjectWithTag("MainCamera").transform;
 
         xRGrabInteractable.selectEntered.AddListener(ToggleStatus);
         xRGrabInteractable.selectExited.AddListener(ToggleStatus);

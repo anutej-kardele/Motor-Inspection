@@ -4,8 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(LineRenderer))]
 public class RaycastInspection : MonoBehaviour
 {
-    [SerializeField] private InputActionProperty trigger_L, trigger_R;
-    public HandIndication handIndication;
+    [SerializeField] private InputActionProperty trigger;
     public Transform pointTowards;                           // line renderer pointing towards this direction
     public LayerMask layerMask;
     public Material lr_true, lr_false;  
@@ -21,15 +20,12 @@ public class RaycastInspection : MonoBehaviour
 
     private void Start(){ lineRenderer = GetComponent<LineRenderer>(); }
 
-    private float trigger_L_Value, trigger_R_Value;
+    private float triggerValue;
 
     private void Update(){
 
-        trigger_L_Value = trigger_L.action.ReadValue<float>();
-        trigger_R_Value = trigger_R.action.ReadValue<float>();
-
-        if(trigger_L_Value > 0 && handIndication == HandIndication.Left) HoverLogic();
-        if(trigger_R_Value > 0 && handIndication == HandIndication.Right) HoverLogic();
+        triggerValue = trigger.action.ReadValue<float>();
+        if(triggerValue > 0) HoverLogic();
 
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, maxDistance, layerMask)) {
             lineDraw = hit.point;

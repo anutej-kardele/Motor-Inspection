@@ -41,6 +41,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-hi
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff21d9ffeaf87af4db3e8ffd48b1b7f0
+    m_Address: MotorAssemblyInstruction_hi
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-hi
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: dc9e78d695868aa44b06b007032f97b0, type: 2}
   m_SchemaSet:

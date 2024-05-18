@@ -1,59 +1,64 @@
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class AssemblyInstructions : MonoBehaviour
 {
 
     public static AssemblyInstructions instance;
-
-    public List<int> graph = new List<int>();
-    public List<bool> isCompleted = new List<bool>();
-    public int[] weight;
-
-    public TMP_Text instructionText;
+    [SerializeField] private List<int> graph = new List<int>();
+    private List<bool> isCompleted = new List<bool>();
+    private int[] weightsArray;
+    [SerializeField] private LocalizeStringEvent instructionLocalizeString;
+    [SerializeField] private GameObject endCanvas;
+    [SerializeField] private Button menuButton;
 
     private void Start(){
         instance = this;
-
+        endCanvas.SetActive(false);
+        menuButton.onClick.AddListener(ReturnToMenu);
         for(int i = 0; i < graph.Count; i++) isCompleted.Add(false);
         Giveinstructions();
     }
 
     private void Giveinstructions(){
-        weight = new int[graph.Count];
+        weightsArray = new int[graph.Count];
 
         for(int i = 0; i < graph.Count; i++){
 
             int search = graph[i];
             int searchIndex = i;
-            int size = 0;
+            int weight = 0;
 
             if(!isCompleted[i]){
 
                 //Debug.Log($"Searching : {i} --- grpah if i : {search} --- graph of search { graph[search] }");
                 while(search != searchIndex){
-                    size++;
+                    weight++;
                     searchIndex = search;
                     search = graph[search];
                 }
             }
-            weight[i] = size;
+            weightsArray[i] = weight;
         }
 
-        int largestWeight = weight[0];
+        int largestWeight = weightsArray[0];
         int largestWeightIndex = 0;
 
-        for(int i = 0; i < weight.Length; i++){
-            if(weight[i] > largestWeight) {
-                largestWeight = weight[i];
+        for(int i = 0; i < weightsArray.Length; i++){
+            if(weightsArray[i] > largestWeight) {
+                largestWeight = weightsArray[i];
                 largestWeightIndex = i;
             }
         }
 
+        // check if the largest weight is 0 to end the module 
+        if(largestWeight == 0) endCanvas.SetActive(true);
+
         // Debug largest i in the UI
-        instructionText.text = $"Largest weight is {largestWeight} and it belongs to : {largestWeightIndex}";
+        instructionLocalizeString.SetEntry(largestWeightIndex.ToString());
     }
 
     public void SetInstructions(int index){
@@ -61,4 +66,6 @@ public class AssemblyInstructions : MonoBehaviour
         // once a instruction is been done give next instruction
         Giveinstructions();
     }
+
+    private void ReturnToMenu(){    SceneManager.LoadScene(0); }
 }

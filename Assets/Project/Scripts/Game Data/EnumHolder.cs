@@ -7,10 +7,6 @@ public enum Language {                // All languages supported by this project
     English, Hindi
 }
 
-public enum HandIndication{
-    Left,Right
-}
-
 public enum InspectionPartsMotor{          // all the parts required for inspection modules 
     Yoke, TernimalBox, PoleCorePoleShoe, Commutator, ArmatureCore, ArmatureWinding, EndPlate, Bearings, Pulley, VentilationDuct, CoolingPad, BackEndPlate
 }

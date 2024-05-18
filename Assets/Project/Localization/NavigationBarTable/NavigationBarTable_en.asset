@@ -30,6 +30,29 @@ MonoBehaviour:
     m_Localized: Back
     m_Metadata:
       m_Items: []
+  - m_Id: 329882795388928
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331506397884416
+    m_Localized: Instruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331623586738176
+    m_Localized: Congratulations! You've successfully built a virtual motor. Use
+      the Menu button to return.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333060844695552
+    m_Localized: "Congratulations! You've successfully navigated the motor familiarization
+      module. You're now well on your way to becoming a motor mastermind!  Here are
+      some options for your next step:\r\n\r\n   - Ready to put your knowledge to
+      the test? Head back to the main menu and select the \"Build a Motor\" module
+      to assemble your own virtual masterpiece!\r\n   - Feel free to explore other
+      modules in the main menu, or simply use the \"Menu\" button to return when
+      you're finished."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

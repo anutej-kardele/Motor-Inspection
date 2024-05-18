@@ -27,6 +27,22 @@ MonoBehaviour:
     m_Key: reload
     m_Metadata:
       m_Items: []
+  - m_Id: 329882795388928
+    m_Key: menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331506397884416
+    m_Key: instruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331623586738176
+    m_Key: completionMotorAssembly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333060844695552
+    m_Key: completionMotorFamiliarization
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
