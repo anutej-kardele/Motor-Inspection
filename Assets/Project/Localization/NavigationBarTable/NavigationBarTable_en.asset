@@ -53,6 +53,19 @@ MonoBehaviour:
       you're finished."
     m_Metadata:
       m_Items: []
+  - m_Id: 1428531398979584
+    m_Localized: Assemble a virtual motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1428680686841856
+    m_Localized: Disassemble a virtual motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1429252592775168
+    m_Localized: Congratulations! You've successfully disassemble a virtual motor.
+      Use the Menu button to return.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

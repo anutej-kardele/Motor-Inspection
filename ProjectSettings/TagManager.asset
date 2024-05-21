@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScrewHolder
   - Screw
+  - DisassembleObject
   layers:
   - Default
   - TransparentFX

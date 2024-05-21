@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: a269bb1c7c62ccb4d94dea71954587c8,
+  m_LightingDataAsset: {fileID: 112000000, guid: 99d81435a31493749b82e7aeb3cba1d8,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 33cdc457939fe554cbe22a206326d253,
     type: 2}
@@ -7946,9 +7946,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StringReference:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:3af20e9763616924d931ac0fb42cb193
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 1428531398979584
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -8868,6 +8868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258606106673733920, guid: c7abf97f08710fc439930968429c426a,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6258606106673733920, guid: c7abf97f08710fc439930968429c426a,
         type: 3}

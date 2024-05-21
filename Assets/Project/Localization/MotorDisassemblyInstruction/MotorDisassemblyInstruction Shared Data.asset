@@ -10,60 +10,72 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: NavigationBarTable Shared Data
+  m_Name: MotorDisassemblyInstruction Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: NavigationBarTable
-  m_TableCollectionNameGuidString: 3af20e9763616924d931ac0fb42cb193
+  m_TableCollectionName: MotorDisassemblyInstruction
+  m_TableCollectionNameGuidString: e597f56c4df559641b5953565a233522
   m_Entries:
-  - m_Id: 5076561920
-    m_Key: back
+  - m_Id: 11347046400
+    m_Key: 0
     m_Metadata:
       m_Items: []
-  - m_Id: 8624943104
-    m_Key: home
+  - m_Id: 19647574016
+    m_Key: 1
     m_Metadata:
       m_Items: []
-  - m_Id: 11045056512
-    m_Key: reload
+  - m_Id: 26157133824
+    m_Key: 2
     m_Metadata:
       m_Items: []
-  - m_Id: 329882795388928
-    m_Key: menu
+  - m_Id: 34478632960
+    m_Key: 3
     m_Metadata:
       m_Items: []
-  - m_Id: 331506397884416
-    m_Key: instruction
+  - m_Id: 44515602432
+    m_Key: 4
     m_Metadata:
       m_Items: []
-  - m_Id: 331623586738176
-    m_Key: completionMotorAssembly
+  - m_Id: 54716149760
+    m_Key: 5
     m_Metadata:
       m_Items: []
-  - m_Id: 333060844695552
-    m_Key: completionMotorFamiliarization
+  - m_Id: 65889775616
+    m_Key: 6
     m_Metadata:
       m_Items: []
-  - m_Id: 1428531398979584
-    m_Key: titleMotorAssemble
+  - m_Id: 73569546240
+    m_Key: 7
     m_Metadata:
       m_Items: []
-  - m_Id: 1428680686841856
-    m_Key: titleMotorDisassembly
+  - m_Id: 82096566272
+    m_Key: 8
     m_Metadata:
       m_Items: []
-  - m_Id: 1429252592775168
-    m_Key: completionMotorDisassembly
+  - m_Id: 90317402112
+    m_Key: 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99679088640
+    m_Key: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107157532672
+    m_Key: 11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112492687360
+    m_Key: 12
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 2343749061962104854
+    rid: 2343749153000783878
   references:
     version: 2
     RefIds:
-    - rid: 2343749061962104854
+    - rid: 2343749153000783878
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1715930561288
+        m_CustomEpoch: 1716274994653
