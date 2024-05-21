@@ -70,6 +70,11 @@ MonoBehaviour:
     m_Localized: Remove the armature core
     m_Metadata:
       m_Items: []
+  - m_Id: 42511730356224
+    m_Localized: Remove all 12 screws. Four of them are located on the terminal box
+      & 4 are on back end plate and end plate each.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

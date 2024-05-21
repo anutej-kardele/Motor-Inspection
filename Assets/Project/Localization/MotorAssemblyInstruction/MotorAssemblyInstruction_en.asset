@@ -19,7 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 5038813184
-    m_Localized: You have assembled the motor
+    m_Localized: Attach all twelve screws. Four of them at terminal box, end plate
+      & back end plate each
     m_Metadata:
       m_Items: []
   - m_Id: 18104070144

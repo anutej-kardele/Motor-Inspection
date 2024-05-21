@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/Menu.unity
     guid: 0afa52cc918ed594e906ac7c8a2812d8
   - enabled: 1
-    path: Assets/Project/Scenes/MotorAssembly.unity
+    path: Assets/Project/Scenes/Motor Scenes/MotorAssembly.unity
     guid: e6e5f124f84cf344d86206f57fd1ca3b
   - enabled: 1
-    path: Assets/Project/Scenes/MotorDisassemble.unity
+    path: Assets/Project/Scenes/Motor Scenes/MotorDisassemble.unity
     guid: 0c15c54af811ab041b9e8e4362183b97
   - enabled: 1
-    path: Assets/Project/Scenes/MotorFamiliarization.unity
+    path: Assets/Project/Scenes/Motor Scenes/MotorFamiliarization.unity
     guid: e60cba4666cd77846a37b20b42ddfe76
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8d88db840f738004eaa3b82b50f24739,

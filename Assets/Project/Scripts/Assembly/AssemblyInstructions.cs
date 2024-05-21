@@ -12,12 +12,11 @@ public class AssemblyInstructions : MonoBehaviour
     private List<bool> isCompleted = new List<bool>();
     private int[] weightsArray;
     [SerializeField] private LocalizeStringEvent instructionLocalizeString;
-    [SerializeField] private GameObject endCanvas;
     [SerializeField] private Button menuButton;
+    [SerializeField] private GameObject screwHolder;
 
     private void Start(){
         instance = this;
-        endCanvas.SetActive(false);
         menuButton.onClick.AddListener(ReturnToMenu);
         for(int i = 0; i < graph.Count; i++) isCompleted.Add(false);
         Giveinstructions();
@@ -55,7 +54,8 @@ public class AssemblyInstructions : MonoBehaviour
         }
 
         // check if the largest weight is 0 to end the module 
-        if(largestWeight == 0) endCanvas.SetActive(true);
+        // if(largestWeight == 0) endCanvas.SetActive(true);
+        if(largestWeight == 0) screwHolder.SetActive(true);
 
         // Debug largest i in the UI
         instructionLocalizeString.SetEntry(largestWeightIndex.ToString());

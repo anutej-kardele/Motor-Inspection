@@ -15,15 +15,13 @@ public class Disassemble : MonoBehaviour
         for(int i = 0; i < graph.Count; i++) objectToRemove[i].enabled = false;
 
         endCanvas.SetActive(false);
-        NextObjectToRemove();
+        //NextObjectToRemove();
     }
 
     // TriggerExit () is called when a DisassembleObject is going outside of the region 
 
     private void OnTriggerExit(Collider other){
         if(other.gameObject.tag.Equals("DisassembleObject")){
-
-            Debug.Log($"Object name is {other.gameObject.name}");
             if(objectToRemoveIndex == other.GetComponent<DisassembleIndex>().index) {
                 isRemoved[objectToRemoveIndex] = true;
                 NextObjectToRemove();
@@ -33,14 +31,14 @@ public class Disassemble : MonoBehaviour
 
     [SerializeField] private List<int> graph = new List<int>();
     [SerializeField] private List<XRGrabInteractable> objectToRemove = new List<XRGrabInteractable>();
-    [SerializeField] private List<bool> isRemoved = new List<bool>();
-    [SerializeField] private int[] weightsArray;
-    [SerializeField] private int objectToRemoveIndex;
+    private List<bool> isRemoved = new List<bool>();
+    private int[] weightsArray;
+    private int objectToRemoveIndex;
     [SerializeField] private LocalizeStringEvent instructionLocalizeString;
     [SerializeField] private GameObject endCanvas;
     [SerializeField] private Button menuButton;
 
-    private void NextObjectToRemove(){
+    public void NextObjectToRemove(){
         weightsArray = new int[graph.Count];
 
         for(int i = 0; i < graph.Count; i++){
@@ -83,13 +81,10 @@ public class Disassemble : MonoBehaviour
 
         // check if the largest weight is 0 to end the module 
         if(smallestWeight == -1) {
-            Debug.Log("Disassembly task completed");
             endCanvas.SetActive(true);
         }
 
         objectToRemoveIndex = smallestWeightIndex;
-
-        Debug.Log($"Smallest Weight index : {smallestWeightIndex}");
         // Debug largest i in the UI
         instructionLocalizeString.SetEntry(smallestWeightIndex.ToString());
     }
