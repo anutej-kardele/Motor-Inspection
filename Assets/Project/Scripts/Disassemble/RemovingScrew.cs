@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class RemovingScrew : MonoBehaviour
 {
-    [SerializeField] private XRGrabInteractable xRGrabInteractable;
+    private XRGrabInteractable xRGrabInteractable;
 
     private void Start(){
         xRGrabInteractable = GetComponent<XRGrabInteractable>();
@@ -15,7 +15,6 @@ public class RemovingScrew : MonoBehaviour
     private void RemoveScrew(SelectEnterEventArgs arg0){
         ScrewRemoval.instance.RemoveScrew();
         xRGrabInteractable.selectEntered.RemoveListener(RemoveScrew);
-        Debug.Log("Screw removing ++");
     }
 
     private void ReleaseKinematicDisable(SelectExitEventArgs arg0){

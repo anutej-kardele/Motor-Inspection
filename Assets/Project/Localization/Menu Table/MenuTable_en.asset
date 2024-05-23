@@ -19,20 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 7832219648
-    m_Localized: 'Mech Master: VR Motor Lab'
+    m_Localized: VR DC Motor
     m_Metadata:
       m_Items: []
   - m_Id: 99272241152
-    m_Localized: "Mech Master: VR Motor Lab is an immersive virtual reality learning
+    m_Localized: 'Mech Master: VR Motor Lab is an immersive virtual reality learning
       experience designed to empower users with a comprehensive understanding of
-      electric motors. Through a series of interactive modules, users can:\r\n\r\n
-      *Become a Master Inspector:**  Meticulously examine individual motor components
-      in a 3D environment, zooming in on intricate details and identifying key functions.
-      \r\n *Build Like a Pro:** Assemble a virtual motor step-by-step, experiencing
-      the satisfaction of putting the different parts together in the correct sequence
-      and understanding their interdependencies.\r\n *Deconstruct with Confidence:** 
-      Disassemble the virtual motor, learning the proper techniques for taking it
-      apart, gaining valuable insights into its internal workings."
+      electric motors. '
     m_Metadata:
       m_Items: []
   - m_Id: 576818917376

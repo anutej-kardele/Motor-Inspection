@@ -77,6 +77,7 @@ public class Disassemble : MonoBehaviour
         // 
         if(smallestWeight != -1){
             objectToRemove[smallestWeightIndex].enabled = true;
+            objectToRemove[smallestWeightIndex].gameObject.GetComponent<Outline>().enabled = true;
         }
 
         // check if the largest weight is 0 to end the module 

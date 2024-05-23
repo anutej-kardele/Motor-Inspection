@@ -5,9 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 //[RequireComponent(typeof(XRGrabInteractable), typeof(BoxCollider))]
 public class SnapObject : MonoBehaviour
 {
-    [SerializeField] public List<SnapObject> snapTargets;
-    [SerializeField] private SnapObject snapParent;
-    [SerializeField] private GameObject snapPosition;
+    [SerializeField] public List<SnapObject> snapTargets;               // the child nodes of the current node 
+    [SerializeField] private SnapObject snapParent;                     // the node in the gaph this object is connected to its parent
+    [SerializeField] private GameObject snapPosition;                   // position the object is going to be attached
     [SerializeField, Header("If you dont want the parent of these object to be snapParent")] private Transform overrideSnapParent;
 
     private XRGrabInteractable xRGrabInteractable;
@@ -16,7 +16,7 @@ public class SnapObject : MonoBehaviour
     [SerializeField, Header("Skip Snapping Condition Once all SnapTarget are met directly send Snap to parent ")] private bool skipSnapping = false;
     [SerializeField, Header("Cant grab the object if value is TRUE")] private bool restrictGrabble = false;
 
-    [SerializeField] private int instructionIndexToSend = 0;
+    [SerializeField] private int instructionIndexToSend = 0;               // send the corresponding index of the object as in the graph
 
     private void Start(){
         xRGrabInteractable = GetComponent<XRGrabInteractable>();
@@ -31,7 +31,7 @@ public class SnapObject : MonoBehaviour
     }
 
     private void CheckGrabbleStatus(){                                                         // Enable XRGrabInteractable when required 
-        if(skipSnapping && snapTargets.Count == 0){
+        if(skipSnapping && snapTargets.Count == 0){                                            // send SetInstructions when skipSnapping is enable 
             snapParent.ReduceSnapTarget(this.name);
 
             if(overrideSnapParent != null) transform.parent = overrideSnapParent;
@@ -48,7 +48,7 @@ public class SnapObject : MonoBehaviour
     private void ToggleSnapPositionTrue(SelectEnterEventArgs arg0) {  snapPosition.SetActive(true); }
     private void ToggleSnapPositionFalse(SelectExitEventArgs arg0) {  snapPosition.SetActive(false); }
 
-    private void OnTriggerEnter(Collider other){
+    private void OnTriggerEnter(Collider other){                                    // checks for if snapped in snapPosition and snaps the object accordingly 
         if(other.gameObject == snapPosition){
             rb.isKinematic = true;
             Destroy(xRGrabInteractable);
@@ -68,8 +68,8 @@ public class SnapObject : MonoBehaviour
         }
     }
 
-    private void ReduceSnapTarget(string value){
-        for(int i =0; i < snapTargets.Count; i++){
+    private void ReduceSnapTarget(string value){                               // used to reduce snapTarget from the parent instance
+        for(int i =0; i < snapTargets.Count; i++){                       
             if(snapTargets[i].name == value){
                 snapTargets.Remove(snapTargets[i]);
                 CheckGrabbleStatus();
