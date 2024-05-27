@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ScrewAssembly : MonoBehaviour
 {
-    [SerializeField] private XRGrabInteractable xRGrabInteractable;
+    private XRGrabInteractable xRGrabInteractable;
     [SerializeField] private string objectToCollide;
 
     private void Start(){

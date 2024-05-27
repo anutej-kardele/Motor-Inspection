@@ -97,8 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: a269bb1c7c62ccb4d94dea71954587c8,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 33cdc457939fe554cbe22a206326d253,
     type: 2}
 --- !u!196 &4
@@ -586,6 +585,10 @@ MonoBehaviour:
   snapTargets: []
   snapParent: {fileID: 954229607}
   snapPosition: {fileID: 451960530}
+  overrideSnapParent: {fileID: 0}
+  skipSnapping: 0
+  restrictGrabble: 0
+  instructionIndexToSend: 0
 --- !u!1 &92254157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,6 +1668,10 @@ MonoBehaviour:
   snapTargets: []
   snapParent: {fileID: 954229607}
   snapPosition: {fileID: 966200968}
+  overrideSnapParent: {fileID: 0}
+  skipSnapping: 0
+  restrictGrabble: 0
+  instructionIndexToSend: 0
 --- !u!1001 &699583343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2282,6 +2289,10 @@ MonoBehaviour:
   - {fileID: 82530862}
   snapParent: {fileID: 1445451230}
   snapPosition: {fileID: 923672410}
+  overrideSnapParent: {fileID: 0}
+  skipSnapping: 0
+  restrictGrabble: 0
+  instructionIndexToSend: 0
 --- !u!1 &966200968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,6 +3243,10 @@ MonoBehaviour:
   - {fileID: 954229607}
   snapParent: {fileID: 0}
   snapPosition: {fileID: 0}
+  overrideSnapParent: {fileID: 0}
+  skipSnapping: 0
+  restrictGrabble: 0
+  instructionIndexToSend: 0
 --- !u!1001 &1449940002
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,8 +11,8 @@ public class StorePartDataMotor : MonoBehaviour
         outlineObject = GetComponent<Outline>();
 
         // outlineObject.OutlineColor = InspectionManager.instance.hoverColor;
-        outlineObject.OutlineColor = Color.green;
-        outlineObject.OutlineWidth = 10.0f;
+        //outlineObject.OutlineColor = Color.green;
+        //outlineObject.OutlineWidth = 10.0f;
         outlineObject.enabled = false;
     }
 }
