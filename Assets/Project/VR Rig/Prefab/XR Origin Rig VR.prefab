@@ -311,7 +311,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3390818883305879761}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3390818883305879761}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -2123,7 +2123,7 @@ GameObject:
   - component: {fileID: 1141870401182776334}
   - component: {fileID: 681218330938872023}
   - component: {fileID: 4387265926415843523}
-  - component: {fileID: 3390818883305879761}
+  - component: {fileID: 6668447517503059588}
   - component: {fileID: 3814859168855696246}
   - component: {fileID: 6972143021842915162}
   - component: {fileID: 5780071529733077901}
@@ -2196,7 +2196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 1141870401182776334}
---- !u!114 &3390818883305879761
+--- !u!114 &6668447517503059588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2205,7 +2205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7959384224925681092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 4387265926415843523}
@@ -2214,14 +2214,14 @@ MonoBehaviour:
   m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 1
-  m_ForwardSource: {fileID: 801964080771120687}
+  m_ForwardSource: {fileID: 5936055842977700467}
   m_LeftHandMoveAction:
     m_UseReference: 1
     m_Action:
       m_Name: Left Hand Move
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: a6b3b884-7042-480d-9579-5f7a58a1d38c
+      m_Id: 6a204f8f-722c-4b33-a759-860ece88aeac
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2234,12 +2234,17 @@ MonoBehaviour:
       m_Name: Right Hand Move
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 6939d2e0-0d4f-4a76-8fd0-8fde21d76569
+      m_Id: 3840e7dc-1199-48e1-9b76-c1ad3dd55dee
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
+  m_HeadTransform: {fileID: 5936055842977700467}
+  m_LeftControllerTransform: {fileID: 6411352250707939931}
+  m_RightControllerTransform: {fileID: 1932882453006872518}
+  m_LeftHandMovementDirection: 0
+  m_RightHandMovementDirection: 0
 --- !u!114 &3814859168855696246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,7 +2326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 3390818883305879761}
+  m_LocomotionProvider: {fileID: 0}
   m_MinHeight: 0
   m_MaxHeight: Infinity
 --- !u!1 &9178102578960808486

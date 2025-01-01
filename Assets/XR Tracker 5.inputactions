@@ -1,0 +1,174 @@
+{
+    "name": "XR Tracker 5",
+    "maps": [
+        {
+            "name": "XR Tracker 5",
+            "id": "05f374ac-8f29-4a8f-86f7-5f78a50eb360",
+            "actions": [
+                {
+                    "name": "XRTracker_5_Position",
+                    "type": "Value",
+                    "id": "52b3b55c-1242-48f8-b7d7-d257e1245826",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_Rotation",
+                    "type": "Value",
+                    "id": "0bc17bc1-972b-4cf5-9fd8-d7cfd793f943",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_isTracked",
+                    "type": "Button",
+                    "id": "9a49b532-d216-49a7-abb6-f099fff54be7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_trackingState",
+                    "type": "Button",
+                    "id": "cb217100-9c51-4852-af0a-ff805a071f96",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_gripPress",
+                    "type": "Button",
+                    "id": "33986c55-7b26-4e0d-9d90-e40bcd4322ea",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_menu",
+                    "type": "Button",
+                    "id": "9a289bb0-9c57-4705-a263-98074e678aee",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_trackpadPress",
+                    "type": "Button",
+                    "id": "3e837785-3874-4dc2-87d9-566727956148",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "XRTracker_5_triggerPress",
+                    "type": "Button",
+                    "id": "040d969c-de41-449e-bfca-a859a23b5583",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0d802837-24a6-4e8c-aa96-a2ccaf4c2a62",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec540369-4c9b-4097-b746-6a45f4b6a911",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db93226c-60de-46dc-bec9-3c79d50b6e97",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 4}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_isTracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c41f1352-3a8e-4192-84e5-85e6befcce08",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/system",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_trackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df2ac4fb-4ca8-4db7-b067-fcf1c5167ab1",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/gripPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_gripPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a06777b5-6298-495f-8151-16872f532b4d",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2ccd1ae-bd6b-43e3-bc3d-49435ca0e7d0",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/trackpadPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_trackpadPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7585112a-b6c8-409d-bc4b-03b01c8bd494",
+                    "path": "<ViveXRTracker>{Ultimate Tracker 5}/triggerPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRTracker_5_triggerPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

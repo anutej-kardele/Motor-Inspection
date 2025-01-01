@@ -524,6 +524,11 @@ PrefabInstance:
       propertyPath: m_InvalidColorGradient.m_ColorSpace
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3390818883305879761, guid: 104ee5e76bc2eee4598d64f0001ccfa7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5569502577105933208, guid: 104ee5e76bc2eee4598d64f0001ccfa7,
         type: 3}
       propertyPath: m_Name
@@ -2619,12 +2624,12 @@ PrefabInstance:
     - target: {fileID: 597575280359234341, guid: d5a7d3fd3c0bfe344b39166af1bf5713,
         type: 3}
       propertyPath: m_fontSize
-      value: 58
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 597575280359234341, guid: d5a7d3fd3c0bfe344b39166af1bf5713,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 58
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 879314882548466371, guid: d5a7d3fd3c0bfe344b39166af1bf5713,
         type: 3}
@@ -4823,7 +4828,7 @@ PrefabInstance:
     - target: {fileID: 6258606106673733920, guid: c7abf97f08710fc439930968429c426a,
         type: 3}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6258606106673733920, guid: c7abf97f08710fc439930968429c426a,
         type: 3}
